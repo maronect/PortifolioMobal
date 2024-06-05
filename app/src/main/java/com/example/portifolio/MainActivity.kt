@@ -21,7 +21,6 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -59,7 +58,6 @@ fun NavigationBar(navController: NavHostController) {
     val iconContact = painterResource(id = R.drawable.contact)
     BottomNavigation (
         modifier = Modifier
-            .background(Color.Red)
             .height(110.dp)
     ) {
         BottomNavigationItem(
@@ -189,7 +187,6 @@ fun HomeScreen(name: String, modifier: Modifier = Modifier) {
                     .weight(1f)
                     .padding(start = 10.dp)
                     .padding(top = 50.dp)
-                /*.background(Color.Blue)*/
             ) {
                 Text(
                     text = "Bem vindo!\nSou\n$name \nEstudante de Ciência da Computação",
